@@ -1,3 +1,5 @@
+## RAG model : LLAMA3.2 LLM model used to chat with pdf and user history stored in Json File.
+
 import os
 import json
 import torch
@@ -61,7 +63,7 @@ def load_pdfs_from_folder(folder_path):
     return documents
 
 
-pdf_folder_path = r"C:\Users\LEGION\Desktop\OLLAMA\data\combine pdfs"
+pdf_folder_path = r"C:\Users\LEGION\Desktop\OLLAMA\data\combine pdfs"  ## folder path of pdfs
 
 
 documents = load_pdfs_from_folder(pdf_folder_path)
